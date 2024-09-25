@@ -30,5 +30,11 @@ public class ATM {
 			System.out.println(e.getMessage());
 		}
 	}
+	
+	public static void main(String[] args) 
+	{
+		ATM atm = new ATM();
+		atm.handleTransactions();
+	}
 
 }
