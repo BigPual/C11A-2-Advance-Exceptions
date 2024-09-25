@@ -20,4 +20,16 @@ public class BankAccount {
 			balance -= w;
 		}
 	}
+	
+	public void quickWithdraw(double w) throws NegativeBalanceException
+	{
+		if(w > balance)
+		{
+			throw new NegativeBalanceException();
+		}
+		else
+		{
+			balance -= w;
+		}
+	}
 }
